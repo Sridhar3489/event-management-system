@@ -20,5 +20,5 @@ jobs:
       - name: Install Backend Dependencies
         run: |
           cd backend
-          npm init -y  # Initialize package.json if not already present
-          npm install  # Install dependencies
+          npm init -y
+          npm install 

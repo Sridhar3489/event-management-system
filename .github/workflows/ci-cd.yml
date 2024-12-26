@@ -23,7 +23,7 @@ jobs:
           node-version: 18  # Specify the Node.js version
 
       - name: Install Backend Dependencies
-        run: |
+        run: 
           cd backend
           npm init -y  # Initialize package.json if not already present
           npm install  # Install dependencies

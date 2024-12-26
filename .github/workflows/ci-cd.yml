@@ -10,20 +10,20 @@ on:
 
 jobs:
   build:
-  name : Build Backend
-  runs-on : ubuntu-latest
+    name : Build Backend
+    runs-on : ubuntu-latest
 
-  steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3  # Checkout the repository code
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3  # Checkout the repository code
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18  # Specify the Node.js version
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Specify the Node.js version
 
-    - name: Install Backend Dependencies
-      run: |
-        cd backend
-        npm init -y  # Initialize package.json if not already present
-        npm install  # Install dependencies
+      - name: Install Backend Dependencies
+        run: |
+          cd backend
+          npm init -y  # Initialize package.json if not already present
+          npm install  # Install dependencies

@@ -1,17 +1,17 @@
-name: MERN CI/CD Pipeline
+name : CI/CD for Event Management System
 
 on:
   push:
     branches:
-      - main  
+      - main
   pull_request:
     branches:
-      - main 
+      - main
 
 jobs:
   build:
     name: Build App
-    runs-on: ubuntu-latest  
+    runs-on : ubuntu-latest
 
     steps:
       - name: Checkout Code

@@ -21,7 +21,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18  # Specify the Node.js version
-
       - name: Install Backend Dependencies
         run: 
           cd backend

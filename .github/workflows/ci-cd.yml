@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Build Backend
+    name: Build App
     runs-on: ubuntu-latest  # Specify the runner
 
     steps:
@@ -22,3 +22,8 @@ jobs:
           cd backend
           npm init -y
           npm install 
+      
+      - name : Install frontend Dependencies
+        run : |
+          cd frontend
+          npm install

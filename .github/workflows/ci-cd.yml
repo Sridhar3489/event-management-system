@@ -1,17 +1,17 @@
-name : MERN CI/CD Pipeline
+name: MERN CI/CD Pipeline
 
 on:
   push:
     branches:
-      -main 
+      - main  # Fixed spacing
   pull_request:
     branches:
-      -main
+      - main  # Fixed spacing
 
 jobs:
   build-and-test:
-    name : Build Backend
-    runs-on : ubuntu-latest #ubuntu
+    name: Build Backend
+    runs-on: ubuntu-latest  # Specify the runner
 
     steps:
       - name: Checkout Code
@@ -20,9 +20,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 18  # Specify the Node.js version
+
       - name: Install Backend Dependencies
-        run: 
+        run: |
           cd backend
           npm init -y  # Initialize package.json if not already present
           npm install  # Install dependencies

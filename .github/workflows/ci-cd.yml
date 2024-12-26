@@ -26,4 +26,5 @@ jobs:
       - name : Install frontend Dependencies
         run : |
           cd frontend
+          npm init -y
           npm install

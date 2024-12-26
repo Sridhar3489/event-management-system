@@ -3,19 +3,19 @@ name: MERN CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # Fixed spacing
+      - main  
   pull_request:
     branches:
-      - main  # Fixed spacing
+      - main 
 
 jobs:
   build:
     name: Build App
-    runs-on: ubuntu-latest  # Specify the runner
+    runs-on: ubuntu-latest  
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3  # Checkout the repository code
+        uses: actions/checkout@v3  
 
       - name: Install Backend Dependencies
         run: |

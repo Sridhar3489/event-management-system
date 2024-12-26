@@ -9,7 +9,7 @@ on:
       - main  # Fixed spacing
 
 jobs:
-  build-and-test:
+  build:
     name: Build Backend
     runs-on: ubuntu-latest  # Specify the runner
 

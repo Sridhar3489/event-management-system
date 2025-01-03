@@ -6,7 +6,7 @@ services:
       context: ./frontend
       dockerfile: dockerfile
     ports:
-      - "3000:80" # Maps port 3000 on your machine to port 80 in the container
+      - "3000:80" 
     depends_on:
       - backend
 
@@ -15,9 +15,9 @@ services:
       context: ./backend
       dockerfile: dockerfile
     ports:
-      - "5000:5000" # Maps port 5000
+      - "5000:5000" 
     environment:
-      - MONGO_URI=mongodb://mongo:27017/event-db # MongoDB connection string
+      - MONGO_URI=mongodb://mongo:27017/event-db 
     depends_on:
       - mongo
 
@@ -25,9 +25,9 @@ services:
     image: mongo:5.0
     container_name: mongo
     ports:
-      - "27017:27017" # Maps MongoDB port
+      - "27017:27017" 
     volumes:
-      - mongo-data:/data/db # Persist database data
+      - mongo-data:/data/db 
 
 volumes:
   mongo-data:
